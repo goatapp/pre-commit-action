@@ -1,0 +1,5 @@
+name: 'pre-commit'
+description: 'Runs pre-commit in your repository'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
