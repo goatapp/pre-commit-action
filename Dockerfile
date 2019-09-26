@@ -6,6 +6,6 @@ RUN apk update && \
 RUN rm -rf /var/cache/apk/*
 
 # Help show any whitespace changes on diffs
-RUN git config --global diff.wsErrorHighlight all
+RUN git config --global diff.wsErrorHighlight all && git config --global color.diff always
 
 ENTRYPOINT ["pre-commit"]
